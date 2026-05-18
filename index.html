@@ -2,24 +2,58 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Bankrupt: Corporate Warfare - Real Time Strategy Game</title>
+    <title>Bankrupt: Corporate Warfare - Real Time Strategy Game for iOS, iPadOS and macOS</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" sizes="any">
+    <link rel="preload" href="https://www.playbankrupt.com/munro/MunroSmall.ttf" as="font" crossorigin="anonymous">
+    <link rel="preload" href="https://www.playbankrupt.com/munro/Munro.ttf" as="font" crossorigin="anonymous">
 
-    <script type="text/javascript">
-        var redirect = () => {
-            window.location.href = "https://testflight.apple.com/join/VyTvqVkn";
+    <meta property="og:title" content="Bankrupt: Corporate Warfare" />
+    <meta property="og:description"
+        content="Conquer the galaxy, one planet at a time." />
+    <meta property="og:image" content="https://www.playbankrupt.com/Base.png" />
+    <meta property="og:url" content="https://www.playbankrupt.com/" />
+
+    <meta name="twitter:title" content="Bankrupt: Corporate Warfare" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="Conquer the galaxy, one planet at a time." />
+    <meta name="twitter:image" content="https://www.playbankrupt.com/Base.png" />
+    <meta name="twitter:site" content="@JustinAlexP" />
+    <meta name="twitter:creator" content="@JustinAlexP" />
+
+    <script>
+        window.onload = () => {
+            document.getElementById("currentYear").innerHTML = new Date().getFullYear().toString();
         }
     </script>
 </head>
 
-<body onload="redirect()">
-    <h1>Bankrupt: Corporate Warfare</h1>
-    <h2>Real Time Strategy</h2>
-    <p>Bankrupt: Corporate Warfare is a real time strategy game where you, as CEO of your company, must defeat your opponents and take over the planet. Build your economy, command your army, and annihilate the competition!</p>
-    <p>Bankrupt is still in development (as you can see from this website). Join the TestFlight beta to get early access!</p>
-    <p>Bankrupt will be available for iPhone, iPad and Mac.</p>
+<body>
+    <div class="headerContainer">
+        <a href="get.html"><img id="headerImage" alt="Bankrupt: Corporate Warfare" width="100%"
+                style="display: block;margin: 0" /></a>
+    </div>
 
-    <a href="https://testflight.apple.com/join/VyTvqVkn">Join TestFlight</a>
+    <div class="titleContainer" onclick="location.href='get.html'">
+        <h1 class="title">BANKRUPT</h1>
+        <p class="subtitle">Corporate Warfare</p>
+    </div>`
+`
+    <div id="contentContainer">
+        <div id="content">
+        <h2>War. Wealth. Victory.</h2>
+        <h3>Build an industrial empire and dominate the galaxy in this action-packed real-time strategy game</h3>
+        <p>Land on an alien planet, gather resources, and develop new technology and weapons to eliminate the competition. With quintillions of planets to conquer, you will never run out of wars to wage.</p>
+        <p>There are over 80 unique towers and units to build. Worlds are dynamic, so your actions can affect the terrain and atmosphere. There is also a supply-and-demand based market system to determine resource prices. Adapt as you play, and create your own unique strategies.</p>
+        <p>Bankrupt has a single-player campaign, but also supports creating and sharing custom levels and campaigns with the built-in Level Editor. Design your own planet, then set custom mission objectives. You get access to all the tools used to make the official Bankrupt campaigns!</p>
+        <p>Bankrupt is coming soon to the App Store for iPhone, iPad and Mac, but a free beta is available on <a href="get.html">TestFlight</a>.</p>
+    </div>
+    </div>
 </body>
+
+<footer>
+    <p id="footerText"><a href="https://twitter.com/JustinAlexP">Copyright © 2025-<span id="currentYear"></span> Justin
+            Proulx</a></p>
+</footer>
 
 </html>

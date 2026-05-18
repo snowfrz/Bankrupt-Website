@@ -1,7 +1,111 @@
-html {
-    background-color: #000;
+@font-face {
+    font-family: munroSmall;
+    src: url("munro/MunroSmall.ttf");
+    font-display: swap;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+@font-face {
+    font-family: munroNarrow;
+    src: url("munro/MunroNarrow.ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: munro;
+    src: url("munro/Munro.ttf");
+    font-display: swap;
+}
+
+html {
+    background-color: #202020;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: #fff;
+}
+
+h2 {
+    font-size: 3em;
+    margin: 0 0 0.2em 0;
+}
+
+h3 {
+    font-size: 1.75em;
+    margin: 0.2em 0 0.2em 0;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    font-family: munroSmall, sans-serif
+}
+
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 5px 15px;
+    font-size: 1em;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #94bdc2;
+}
+
+.headerContainer {
+    margin: 0;
+    padding: 0;
+}
+
+#headerImage {
+    content: url("./Base.png");
+    image-rendering: pixelated;
+}
+
+.titleContainer {
+    background-color: #000;
+    cursor: pointer;
+}
+
+.title {
+    font-family: munro, sans-serif;
+    text-align: center;
+    font-size: 4em;
+    margin: 0 0 -8px 0;
+    padding-top: 8px;
+}
+
+.subtitle {
+    font-family: munroSmall, sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0;
+    color: #FF0000;
+    padding-bottom: 16px;
+}
+
+#contentContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content {
+    margin: 16px;
+    margin-bottom: 32px;
+    max-width: 800px;
 }
