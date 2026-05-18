@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="getHTML" lang="en">
+<html id="getHTML" lang="en" style="background-color: #000;">
 
 <head>
     <meta charset="UTF-8">
@@ -20,18 +20,17 @@
     <meta name="twitter:creator" content="@JustinAlexP" />
 
     <script type="text/javascript">
-        var redirect = () => {
-            window.location.href = "https://testflight.apple.com/join/VyTvqVkn";
-        }
+        // var redirect = () => {
+        //     window.location.href = "https://testflight.apple.com/join/VyTvqVkn";
+        // }
     </script>
 </head>
 
-<body id="getBody" onload="redirect()">
-    <a href="https://testflight.apple.com/join/VyTvqVkn">
-        <div id="getMenuContainer">
-            <img id="capitolImage" alt="Bankrupt: Corporate Warfare" />
-        </div>
-    </a>
+<body id="getBody" onload="redirect()" style="height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; cursor: pointer;" onclick="location.href='https://testflight.apple.com/join/VyTvqVkn'">
+    <div class="titleContainer">
+        <h1 class="title">BANKRUPT</h1>
+        <p class="subtitle">Corporate Warfare</p>
+    </div>
 </body>
 
 </html>
