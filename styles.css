@@ -100,6 +100,7 @@ footer a:hover {
     font-family: munro, sans-serif;
     text-align: center;
     margin: 0 0 -8px 0;
+    padding-top: 8px;
 }
 
 .subtitle {
@@ -107,6 +108,7 @@ footer a:hover {
     text-align: center;
     margin: 0;
     color: #FF0000;
+    padding-bottom: 19px;
 }
 
 #contentContainer {
@@ -141,12 +143,10 @@ footer a:hover {
 @media (min-width: 1001px) {
     .title {
         font-size: 6em;
-        padding-top: 8px;
     }
 
     .subtitle {
         font-size: 2.3em;
-        padding-bottom: 16px;
     }
 
     #playNow {
@@ -157,12 +157,10 @@ footer a:hover {
 @media (max-width: 1000px) {
     .title {
         font-size: 5em;
-        padding-top: 8px;
     }
 
     .subtitle {
         font-size: 1.9em;
-        padding-bottom: 16px;
     }
 
     #playNow {
