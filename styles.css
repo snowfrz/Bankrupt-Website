@@ -67,7 +67,7 @@ footer {
     background-color: #000;
     text-align: center;
     padding: 5px 15px;
-    font-size: 1.25em;
+    font-size: 1em;
 }
 
 footer a {
@@ -98,19 +98,15 @@ footer a:hover {
 
 .title {
     font-family: munro, sans-serif;
-    font-size: 6em;
     text-align: center;
     margin: 0 0 -8px 0;
-    padding-top: 8px;
 }
 
 .subtitle {
     font-family: munroSmall, sans-serif;
-    font-size: 2.3em;
     text-align: center;
     margin: 0;
     color: #FF0000;
-    padding-bottom: 16px;
 }
 
 #contentContainer {
@@ -130,7 +126,6 @@ footer a:hover {
     cursor: pointer;
     user-select: none;
     -webkit-user-select: none;
-    font-size: 2em;
     padding: 16px;
 }
 
@@ -141,4 +136,36 @@ footer a:hover {
 #playNow p {
     margin: 0;
     text-align: center;
+}
+
+@media (min-width: 1001px) {
+    .title {
+        font-size: 6em;
+        padding-top: 8px;
+    }
+
+    .subtitle {
+        font-size: 2.3em;
+        padding-bottom: 16px;
+    }
+
+    #playNow {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 1000px) {
+    .title {
+        font-size: 5em;
+        padding-top: 8px;
+    }
+
+    .subtitle {
+        font-size: 1.9em;
+        padding-bottom: 16px;
+    }
+
+    #playNow {
+        font-size: 1.5em;
+    }
 }
